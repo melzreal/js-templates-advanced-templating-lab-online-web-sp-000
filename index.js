@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function reateRecipe(){
   var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  var result = template(issues);
+  var result = template(recipes);
 document.getElementsByTagName("main")[0].innerHTML += result;
 }
