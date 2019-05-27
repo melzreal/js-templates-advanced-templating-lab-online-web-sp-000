@@ -1,6 +1,7 @@
 function init() {
   //put any page initialization/handlebars initialization here
   createRecipe();
+  Handlebars.registerPartial('recipe-details-partial', '{{name}}')
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
@@ -18,5 +19,5 @@ function handleSubmit(){
 }
 
 function displayEditForm(){
-  
+
 }
