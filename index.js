@@ -5,3 +5,9 @@ function init() {
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+
+function reateRecipe(){
+  var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  var result = template(issues);
+document.getElementsByTagName("main")[0].innerHTML += result;
+}
