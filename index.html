@@ -8,10 +8,11 @@
   </head>
   <body>
     <main id="main">
+        <a href="#" onclick="createRecipe();">Create a new Recipe</a>
     </main>
     <script id="recipe-form-template" type="text/x-handlebars-template">
       <div id="recipe">
-          <p>{{name}}</p>
+        <p>{{name}}</p>
         <p>{{description}}</p>
         <ul>
           {{#each ingredients}}
@@ -20,6 +21,8 @@
         </ul>
       </div>
     </script>
+
+    
     <script id="show-recipe" type="text/x-handlebars-template">
       <div id="show_recipe">
         <p>{{description}}</p>
