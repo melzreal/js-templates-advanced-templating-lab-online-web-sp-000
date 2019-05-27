@@ -6,16 +6,3 @@ function init() {
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
-
-function createRecipe(){
-
-}
-
-
-function handleSubmit(){
-
-}
-
-function displayEditForm(){
-
-}
