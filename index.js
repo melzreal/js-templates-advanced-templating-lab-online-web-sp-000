@@ -1,6 +1,7 @@
 function init() {
   //put any page initialization/handlebars initialization here
-  let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
+  let firstForm = document.getElementById("recipe-form-template").innerHTML;
+  let formTemplate = Handlebars.compile(firstForm);
   Handlebars.registerPartial('rec-details', document.getElementById("recipe-details-partial").innerHTML);
 }
 
