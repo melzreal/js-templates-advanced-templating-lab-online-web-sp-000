@@ -1,6 +1,6 @@
 function init() {
   //put any page initialization/handlebars initialization here
-  createRecipe();
+  let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   Handlebars.registerPartial('rec-details', document.getElementById("recipe-details-partial").innerHTML);
 }
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe(){
-  var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
 
 }
 
