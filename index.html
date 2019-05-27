@@ -27,11 +27,7 @@
     <script id="recipe-template" type="text/x-handlebars-template">
       <div id="show_recipe">
         <header id="recipeName">{{name}}</header>
-        <ul>
-          {{#each ingredients}}
-          <li>{{name}}</li>
-          {{/each}}
-        </ul>
+      <a href="#" onclick="displayEditForm();"> EditRecipe</a>
       </div>
     </script>
 
