@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function createRecipe(){
   var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  var result = template(recipes);
+  var result = template("recipe-form");
   document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
